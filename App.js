@@ -25,13 +25,15 @@ export default class App extends Component {
           <Icon name = 'menu' style = {{ margin: 10, marginRight: 10, width: 50, height: 50 }}></Icon>
         </Header>
         <Content>
+
+        {/*------------------------Content 1------------------------*/}
           <Card>
             <CardItem>
                 <Left>
                   <Thumbnail source={require('./assets/images/pp1.jpeg')} />
                   <Body>
-                    <Text>NativeBase</Text>
-                    <Text note>GeekyAnts</Text>
+                    <Text>Budi</Text>
+                    <Text note>4 Des pukul 10.21 AM</Text>
                   </Body>
                 </Left>
               </CardItem>
@@ -59,6 +61,44 @@ export default class App extends Component {
               </Right>
             </CardItem>
           </Card>
+          {/*------------------------Content 1------------------------*/}
+
+          {/*------------------------Content 2------------------------*/}
+          <Card>
+            <CardItem>
+                <Left>
+                  <Thumbnail source={require('./assets/images/pp2.jpg')} />
+                  <Body>
+                    <Text>Andi</Text>
+                    <Text note>12 Des pukul 12:12 PM</Text>
+                  </Body>
+                </Left>
+              </CardItem>
+            <CardItem cardBody>
+              <Image source={require('./assets/images/content2.jpg')} style={{height: 200, width: null, flex: 1}}/>
+            </CardItem>
+            <CardItem>
+              <Left>
+                <Button transparent>
+                  <Icon active name="thumbs-up" />
+                  <Text style = {{fontSize: 11}}>12 Likes</Text>
+                </Button>
+              </Left>
+              <Body>
+                <Button transparent>
+                  <Icon active name="chatbubbles" />
+                  <Text style = {{fontSize: 11}}>Comments</Text>
+                </Button>
+              </Body>
+              <Right>
+                <Button transparent>
+                  <Icon active name="share" />
+                  <Text style = {{fontSize: 11}}>Share</Text>
+                </Button>
+              </Right>
+            </CardItem>
+          </Card>
+          {/*------------------------Content 2------------------------*/}
         </Content>
       </Container>
     );
