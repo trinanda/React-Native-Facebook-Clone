@@ -44,7 +44,7 @@ export default class App extends Component {
               <Left>
                 <Button transparent>
                   <Icon active name="thumbs-up" />
-                  <Text style = {{fontSize: 11}}>12 Likes</Text>
+                  <Text style = {{fontSize: 11}}>33 Likes</Text>
                 </Button>
               </Left>
               <Body>
@@ -81,7 +81,7 @@ export default class App extends Component {
               <Left>
                 <Button transparent>
                   <Icon active name="thumbs-up" />
-                  <Text style = {{fontSize: 11}}>12 Likes</Text>
+                  <Text style = {{fontSize: 11}}>4 Likes</Text>
                 </Button>
               </Left>
               <Body>
@@ -99,6 +99,54 @@ export default class App extends Component {
             </CardItem>
           </Card>
           {/*------------------------Content 2------------------------*/}
+
+          {/*------------------------Content 3------------------------*/}
+          <Card style={{flex: 0}}>
+            <CardItem>
+              <Left>
+                <Thumbnail source={require('./assets/images/pp3.jpeg')} />
+                <Body>
+                  <Text>NativeBase</Text>
+                  <Text note>April 15, 2016</Text>
+                </Body>
+              </Left>
+            </CardItem>
+            <CardItem>
+              <Body>
+                <Image source={require('./assets/images/content3.jpeg')} style={{height: 200, width: '100%', flex: 1}}/>
+                <Text>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </Text>
+              </Body>
+            </CardItem>
+            <CardItem>
+              <Left>
+                <Button transparent>
+                  <Icon active name="thumbs-up" />
+                  <Text style = {{fontSize: 11}}>99 Likes</Text>
+                </Button>
+              </Left>
+              <Body>
+                <Button transparent>
+                  <Icon active name="chatbubbles" />
+                  <Text style = {{fontSize: 11}}>Comments</Text>
+                </Button>
+              </Body>
+              <Right>
+                <Button transparent>
+                  <Icon active name="share" />
+                  <Text style = {{fontSize: 11}}>Share</Text>
+                </Button>
+              </Right>
+            </CardItem>
+          </Card>
+          {/*------------------------Content 3------------------------*/}
         </Content>
       </Container>
     );
