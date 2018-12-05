@@ -8,6 +8,7 @@ export default class Homepage extends Component {
       <Container>
         <Header />
         <Content>
+
           <Card>
             <CardItem>
               <Left>
