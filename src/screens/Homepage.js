@@ -21,7 +21,7 @@ export default class Homepage extends Component {
         </Header>
 
         {/* */}
-        <HeaderMod data1={this.props.navigationHomePage} />
+        <HeaderMod navigationsData = {this.props.navigation} />
 
         <Content>
 
