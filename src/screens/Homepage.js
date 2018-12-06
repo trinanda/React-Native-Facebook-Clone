@@ -14,9 +14,10 @@ export default class Homepage extends Component {
           <Body>
             {/* <Title>Header</Title> */}
 
+            <TextInput placeholder='Cari' style={{width: 300, color: 'white', fontSize: 19}}/>
           </Body>
           <Right>
-            <Icon name = 'search' style = {{marginRight: 20}}></Icon>
+            <Icon name = 'search' style = {{marginRight: 20, color: 'white'}}></Icon>
           </Right>
         </Header>
 
