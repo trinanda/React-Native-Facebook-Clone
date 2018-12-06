@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Title, Footer, FooterTab, Content, Card, CardItem,
    Thumbnail, Header, Text, Button, Icon, Left, Body, Right } from 'native-base';
-import { Image } from 'react-native';
+import { Image, StyleSheet, View, TextInput } from 'react-native';
 
 import HeaderMod from '../components/HeaderMod.js'
 
@@ -24,6 +24,10 @@ export default class Homepage extends Component {
         <HeaderMod navigationsData = {this.props.navigation} />
 
         <Content>
+          <View style={styles.container}>
+            <Image style={styles.image} source={require('../images/pp2.jpg')}/>
+            <TextInput placeholder='Apa yang sedang Anda pikir kan..?' style={styles.text}/>
+          </View>
 
         {/*------------------------Content 1------------------------*/}
           <Card>
@@ -151,3 +155,25 @@ export default class Homepage extends Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    marginTop: 30,
+    height: 40,
+    backgroundColor: 'white',
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
+  image: {
+    height: 40,
+    width: 40,
+    borderRadius: 25,
+    marginLeft: 10,
+    borderWidth: 2,
+    borderColor: '#BDBDBD'
+  },
+  text: {
+    fontSize: 16,
+    marginLeft: 10,
+  }
+})
