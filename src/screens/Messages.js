@@ -17,7 +17,7 @@ export default class Messages extends Component {
           <List>
             <ListItem avatar>
               <Left>
-                <Thumbnail source={{ uri: 'Image URL' }} />
+                <Thumbnail source={require('../images/pp1.jpeg')} />
               </Left>
               <Body>
                 <Text>Kumar Pratik</Text>
@@ -31,7 +31,7 @@ export default class Messages extends Component {
           <List>
             <ListItem avatar>
               <Left>
-                <Thumbnail source={{ uri: 'Image URL' }} />
+                <Thumbnail source={require('../images/pp2.jpg')} />
               </Left>
               <Body>
                 <Text>Kumar Pratik</Text>
@@ -45,7 +45,7 @@ export default class Messages extends Component {
           <List>
             <ListItem avatar>
               <Left>
-                <Thumbnail source={{ uri: 'Image URL' }} />
+                <Thumbnail source={require('../images/pp3.jpeg')} />
               </Left>
               <Body>
                 <Text>Kumar Pratik</Text>
