@@ -39,7 +39,7 @@ export default class Homepage extends Component {
                   <Thumbnail source={require('../images/pp1.jpeg')} />
                   <Body>
                     <Text>Budi</Text>
-                    <Text note>4 Des pukul 10.21 AM</Text>
+                    <Text note>Just now</Text>
                   </Body>
                 </Left>
               </CardItem>

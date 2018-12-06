@@ -1,52 +1,60 @@
 import React, { Component } from 'react';
-import { Container, Header, Content, List, ListItem, Text, Icon, Left, Body, Right, Switch } from 'native-base';
-export default class ListIconExample extends Component {
+import { Container, Header, Content, List, ListItem, Text, Icon, Left, Body, Right, Switch, Thumbnail, Button } from 'native-base';
+import { View } from 'react-native'
+import HeaderMod from '../components/HeaderMod.js'
+
+
+export default class Menu extends Component {
   render() {
     return (
       <Container>
         <Header />
+
+        <HeaderMod navigationsData = {this.props.navigation} />
+
         <Content>
+
           <ListItem icon>
             <Left>
-              <Button style={{ backgroundColor: "#FF9501" }}>
-                <Icon active name="plane" />
-              </Button>
+              <Thumbnail source={require('../images/Ali.jpeg')} style={{borderRadius: 25, borderWidth: 2, height: 40, width: 40}}/>
             </Left>
             <Body>
-              <Text>Airplane Mode</Text>
+              <Text>Ali</Text>
+                <Text style={{color: '#dadada', fontSize: 13, fontFamily: 'sans-serif'}}>Lihat profile Anda</Text>
             </Body>
-            <Right>
-              <Switch value={false} />
-            </Right>
           </ListItem>
+
+          <List style={{height: 19, backgroundColor: "#dadada", fontFamily: 'sans-serif'}}>
+            <Text style={{fontSize: 12, paddingLeft: 7}}>GROUPS</Text>
+          </List>
+
           <ListItem icon>
             <Left>
-              <Button style={{ backgroundColor: "#007AFF" }}>
-                <Icon active name="wifi" />
-              </Button>
+                <Thumbnail source={require('../icons/ubuntu.png')} style = {{height: 40, width: 40}} />
             </Left>
             <Body>
-              <Text>Wi-Fi</Text>
+              <Text>Ubuntu Linux Indonesia</Text>
             </Body>
-            <Right>
-              <Text>GeekyAnts</Text>
-              <Icon active name="arrow-forward" />
-            </Right>
           </ListItem>
+
           <ListItem icon>
             <Left>
-              <Button style={{ backgroundColor: "#007AFF" }}>
-                <Icon active name="bluetooth" />
-              </Button>
+                <Thumbnail source={require('../icons/python.png')} style = {{height: 40, width: 40}} />
             </Left>
             <Body>
-              <Text>Bluetooth</Text>
+              <Text>Python Indonesia</Text>
             </Body>
-            <Right>
-              <Text>On</Text>
-              <Icon active name="arrow-forward" />
-            </Right>
           </ListItem>
+
+          <ListItem icon>
+            <Left>
+                <Thumbnail source={require('../icons/javascript-grup-fb-Indo.jpg')} style = {{height: 40, width: 40}} />
+            </Left>
+            <Body>
+              <Text>Javascript Indonesia</Text>
+            </Body>
+          </ListItem>
+
         </Content>
       </Container>
     );
