@@ -3,12 +3,14 @@ import { Container, Header, Content, List, ListItem, Left, Body, Right, Thumbnai
 import { TouchableOpacity } from 'react-native'
 
 import HeaderMod from '../components/HeaderMod.js'
+import HeaderSearch from '../components/HeaderSearch.js'
+
 
 export default class Messages extends Component {
   render() {
     return (
       <Container>
-        <Header />
+        <HeaderSearch />
 
         <HeaderMod navigationsData={this.props.navigation} />
 

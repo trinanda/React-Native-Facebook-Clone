@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import { Container, Header, Content, List, ListItem, Text, Icon, Left, Body, Right, Switch, Thumbnail, Button } from 'native-base';
 import { View } from 'react-native'
+
 import HeaderMod from '../components/HeaderMod.js'
+import HeaderSearch from '../components/HeaderSearch.js'
 
 
 export default class Menu extends Component {
   render() {
     return (
       <Container>
-        <Header />
+        <HeaderSearch />
 
         <HeaderMod navigationsData = {this.props.navigation} />
 

@@ -4,24 +4,15 @@ import { Container, Title, Footer, FooterTab, Content, Card, CardItem,
 import { Image, StyleSheet } from 'react-native';
 
 import HeaderMod from '../components/HeaderMod.js'
+import HeaderSearch from '../components/HeaderSearch.js'
 
 export default class Homepage extends Component {
   render() {
     return (
       <Container>
-        <Header>
 
-          <Body>
-            {/* <Title>Header</Title> */}
+        <HeaderSearch />
 
-            <Input placeholder='Cari' placeholderTextColor='#fff' style={{width: 300, color: 'white', fontSize: 19}}/>
-          </Body>
-          <Right>
-            <Icon name = 'search' style = {{marginRight: 20, color: 'white'}}></Icon>
-          </Right>
-        </Header>
-
-        {/* */}
         <HeaderMod navigationsData = {this.props.navigation} />
 
         <Content>
