@@ -3,7 +3,9 @@ import { Container, Title, Footer, FooterTab, Content, Card, CardItem,
    Thumbnail, Header, Text, Button, Icon, Left, Body, Right } from 'native-base';
 import { Image } from 'react-native';
 
-export default class App extends Component {
+import HeaderMod from '../components/HeaderMod.js'
+
+export default class Homepage extends Component {
   render() {
     return (
       <Container>
@@ -17,20 +19,17 @@ export default class App extends Component {
             <Icon name = 'search' style = {{marginRight: 20}}></Icon>
           </Right>
         </Header>
-        <Header style = {{backgroundColor: 'white'}}>
-          <Icon name = 'card' style = {{ margin: 10, marginRight: 10, width: 50, height: 50 }}></Icon>
-          <Icon name = 'people' style = {{ margin: 10, marginRight: 10, width: 50, height: 50 }}></Icon>
-          <Icon name = 'chatboxes' style = {{ margin: 10, marginRight: 10, width: 50, height: 50 }}></Icon>
-          <Icon name = 'globe' style = {{ margin: 10, marginRight: 10, width: 50, height: 50 }}></Icon>
-          <Icon name = 'menu' style = {{ margin: 10, marginRight: 10, width: 50, height: 50 }}></Icon>
-        </Header>
+
+        {/* */}
+        <HeaderMod data1={this.props.navigationHomePage} />
+
         <Content>
 
         {/*------------------------Content 1------------------------*/}
           <Card>
             <CardItem>
                 <Left>
-                  <Thumbnail source={require('./assets/images/pp1.jpeg')} />
+                  <Thumbnail source={require('../images/pp1.jpeg')} />
                   <Body>
                     <Text>Budi</Text>
                     <Text note>4 Des pukul 10.21 AM</Text>
@@ -38,7 +37,7 @@ export default class App extends Component {
                 </Left>
               </CardItem>
             <CardItem cardBody>
-              <Image source={require('./assets/images/content1.jpg')} style={{height: 200, width: null, flex: 1}}/>
+              <Image source={require('../images/content1.jpg')} style={{height: 200, width: null, flex: 1}}/>
             </CardItem>
             <CardItem>
               <Left>
@@ -67,7 +66,7 @@ export default class App extends Component {
           <Card>
             <CardItem>
                 <Left>
-                  <Thumbnail source={require('./assets/images/pp2.jpg')} />
+                  <Thumbnail source={require('../images/pp2.jpg')} />
                   <Body>
                     <Text>Andi</Text>
                     <Text note>12 Des pukul 12:12 PM</Text>
@@ -75,7 +74,7 @@ export default class App extends Component {
                 </Left>
               </CardItem>
             <CardItem cardBody>
-              <Image source={require('./assets/images/content2.jpg')} style={{height: 200, width: null, flex: 1}}/>
+              <Image source={require('../images/content2.jpg')} style={{height: 200, width: null, flex: 1}}/>
             </CardItem>
             <CardItem>
               <Left>
@@ -104,7 +103,7 @@ export default class App extends Component {
           <Card style={{flex: 0}}>
             <CardItem>
               <Left>
-                <Thumbnail source={require('./assets/images/pp3.jpeg')} />
+                <Thumbnail source={require('../images/pp3.jpeg')} />
                 <Body>
                   <Text>NativeBase</Text>
                   <Text note>April 15, 2016</Text>
@@ -113,7 +112,7 @@ export default class App extends Component {
             </CardItem>
             <CardItem>
               <Body>
-                <Image source={require('./assets/images/content3.jpeg')} style={{height: 200, width: '100%', flex: 1}}/>
+                <Image source={require('../images/content3.jpeg')} style={{height: 200, width: '100%', flex: 1}}/>
                 <Text>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
