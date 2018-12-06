@@ -11,7 +11,9 @@ export default class HeaderMod extends Component{
           <Icon name = 'card' style = {{ margin: 10, marginRight: 10, width: 50, height: 50 }}></Icon>
         </TouchableOpacity>
 
-        <Icon name = 'people' style = {{ margin: 10, marginRight: 10, width: 50, height: 50 }}></Icon>
+        <TouchableOpacity>
+          <Icon name = 'people' style = {{ margin: 10, marginRight: 10, width: 50, height: 50 }}></Icon>
+        </TouchableOpacity>
 
         <TouchableOpacity onPress = {() => this.props.navigationsData.navigate('Messages')}>
           <Icon name = 'chatboxes' style = {{ margin: 10, marginRight: 10, width: 50, height: 50 }}></Icon>
