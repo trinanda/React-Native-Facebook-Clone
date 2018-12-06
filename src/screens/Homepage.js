@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Title, Footer, FooterTab, Content, Card, CardItem,
-   Thumbnail, Header, Text, Button, Icon, Left, Body, Right } from 'native-base';
-import { Image, StyleSheet, View, TextInput } from 'react-native';
+   Thumbnail, Header, Text, Button, Icon, Left, Body, Right, Input } from 'native-base';
+import { Image, StyleSheet } from 'react-native';
 
 import HeaderMod from '../components/HeaderMod.js'
 
@@ -14,7 +14,7 @@ export default class Homepage extends Component {
           <Body>
             {/* <Title>Header</Title> */}
 
-            <TextInput placeholder='Cari' placeholderTextColor='#fff' style={{width: 300, color: 'white', fontSize: 19}}/>
+            <Input placeholder='Cari' placeholderTextColor='#fff' style={{width: 300, color: 'white', fontSize: 19}}/>
           </Body>
           <Right>
             <Icon name = 'search' style = {{marginRight: 20, color: 'white'}}></Icon>
@@ -25,10 +25,12 @@ export default class Homepage extends Component {
         <HeaderMod navigationsData = {this.props.navigation} />
 
         <Content>
-          <View style={styles.container}>
+          <Container style={styles.container}>
             <Image style={styles.image} source={require('../images/pp2.jpg')}/>
-            <TextInput placeholder='Apa yang sedang Anda pikir kan..?' style={styles.text}/>
-          </View>
+              <Input placeholder='Apa yang sedang Anda pikir kan..?' style={styles.text}/>
+
+
+          </Container>
 
         {/*------------------------Content 1------------------------*/}
           <Card>
