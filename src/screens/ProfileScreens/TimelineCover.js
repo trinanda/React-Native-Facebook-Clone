@@ -9,7 +9,7 @@ export default class TimelineCover extends Component{
         return(
             <View style={{backgroundColor: 'white'}}>
                 <CoverPhoto />
-                <ProfilePhoto name='User Name' />
+                <ProfilePhoto name='Ali' />
             </View>
         )
     }
