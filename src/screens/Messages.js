@@ -10,7 +10,7 @@ export default class Messages extends Component {
   render() {
     return (
       <Container>
-        <HeaderSearch />
+        <HeaderSearch navigationsData={this.props.navigation} />
 
         <HeaderMod navigationsData={this.props.navigation} />
 

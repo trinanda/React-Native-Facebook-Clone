@@ -11,6 +11,7 @@ import StatusInput from '../../screens/ProfileScreens/StatusInput.js'
 import Photos from '../../screens/ProfileScreens/Photos.js'
 import Friends from '../../screens/ProfileScreens/Friends.js'
 import Filter from '../../screens/ProfileScreens/Filter.js'
+import Status from '../../screens/ProfileScreens/Status.js'
 
 
 export default class ProfilePage extends Component {
@@ -27,6 +28,7 @@ export default class ProfilePage extends Component {
           <Photos />
           <Friends />
           <Filter />
+          <Status />
         </ScrollView>
       </Container>
     )

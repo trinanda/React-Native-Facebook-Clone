@@ -26,7 +26,7 @@ const AppNavigator = createStackNavigator({
   },
 }, {
     headerMode: 'none',
-    initialRouteName: 'ProfilePage',
+    initialRouteName: 'Login',
 });
 
 export default createAppContainer(AppNavigator);
