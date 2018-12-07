@@ -8,6 +8,7 @@ import TimelineCoverButton from '../../screens/ProfileScreens/TimelineCoverButto
 import ProfileIntroCard from '../../screens/ProfileScreens/ProfileIntroCard.js'
 import GalleryProfileIntro from '../../screens/ProfileScreens/GalleryProfileIntro.js'
 import StatusInput from '../../screens/ProfileScreens/StatusInput.js'
+import Photos from '../../screens/ProfileScreens/Photos.js'
 
 
 export default class ProfilePage extends Component {
@@ -21,6 +22,7 @@ export default class ProfilePage extends Component {
           <ProfileIntroCard />
           <GalleryProfileIntro />
           <StatusInput />
+          <Photos />
         </ScrollView>
       </Container>
     )
