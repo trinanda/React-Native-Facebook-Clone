@@ -9,6 +9,7 @@ import ProfileIntroCard from '../../screens/ProfileScreens/ProfileIntroCard.js'
 import GalleryProfileIntro from '../../screens/ProfileScreens/GalleryProfileIntro.js'
 import StatusInput from '../../screens/ProfileScreens/StatusInput.js'
 import Photos from '../../screens/ProfileScreens/Photos.js'
+import Friends from '../../screens/ProfileScreens/Friends.js'
 
 
 export default class ProfilePage extends Component {
@@ -23,6 +24,7 @@ export default class ProfilePage extends Component {
           <GalleryProfileIntro />
           <StatusInput />
           <Photos />
+          <Friends />
         </ScrollView>
       </Container>
     )
