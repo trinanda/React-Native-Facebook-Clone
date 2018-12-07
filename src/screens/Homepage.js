@@ -11,7 +11,7 @@ export default class Homepage extends Component {
     return (
       <Container>
 
-        <HeaderSearch />
+        <HeaderSearch navigationsData = {this.props.navigation} />
 
         <HeaderMod navigationsData = {this.props.navigation} />
 
