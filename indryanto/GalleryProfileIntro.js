@@ -4,7 +4,7 @@ import { View, Image, Text, StyleSheet } from 'react-native';
 import EditButton from './EditButton.js';
 import MoreInfo from './MoreInfo.js';
 
-export default class GalleryProfileIntor extends Component {
+export default class GalleryProfileIntro extends Component {
 	render(){
 		return(
 			<View style={{ backgroundColor: 'white' }}>

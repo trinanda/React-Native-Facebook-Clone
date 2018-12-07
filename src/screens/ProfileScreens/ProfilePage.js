@@ -6,6 +6,7 @@ import TimelineCover from './TimelineCover.js'
 import HeaderSearch from '../../components/HeaderSearch.js';
 import TimelineCoverButton from '../../screens/ProfileScreens/TimelineCoverButton.js'
 import ProfileIntroCard from '../../screens/ProfileScreens/ProfileIntroCard.js'
+import GalleryProfileIntro from '../../screens/ProfileScreens/GalleryProfileIntro.js'
 
 
 export default class ProfilePage extends Component {
@@ -17,6 +18,7 @@ export default class ProfilePage extends Component {
           <TimelineCover />
           <TimelineCoverButton />
           <ProfileIntroCard />
+          <GalleryProfileIntro />
         </ScrollView>
       </Container>
     )
