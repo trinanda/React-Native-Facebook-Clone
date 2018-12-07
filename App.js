@@ -1,34 +1,28 @@
-import React, { Component } from 'react';
-import { View, Text, ScrollView } from 'react-native';
+import React from 'react';
+import { View, Text, Button } from 'react-native';
+import { createAppContainer, createStackNavigator, StackActions, NavigationActions } from 'react-navigation'; // Version can be specified in package.json
 
-import HeaderTitle from './indryanto/HeaderTitle.js';
-import TimelineCover from './indryanto/TimelineCover.js';
-import TimelineCoverButton from './indryanto/TimelineCoverButton.js';
-import ProfileIntroCard from './indryanto/ProfileIntroCard.js';
-import GalleryProfileIntro from './indryanto/GalleryProfileIntro.js';
-import StatusInput from './indryanto/StatusInput.js';
-import Photos from './indryanto/Photos.js';
-import Friends from './indryanto/Friends.js';
-import Filter from './indryanto/Filter.js';
-import Status from './indryanto/Status.js';
+import Homepage from './src/screens/Homepage.js'
+import Menu from './src/screens/Menu.js'
+import Login from './src/screens/Login.js'
+import Messages from './src/screens/Messages.js'
 
-export default class ProfilePage extends Component {
-    render(){
-        return(
-            <View style={{ flex: 1 }}>
-                <HeaderTitle placeholder='Search' />
-                <ScrollView>
-                    <TimelineCover />
-                    <TimelineCoverButton />
-                    <ProfileIntroCard />
-                    <GalleryProfileIntro />
-                    <StatusInput />
-                    <Photos />
-                    <Friends />
-                    <Filter />
-                    <Status />
-                </ScrollView>
-            </View>
-        );
-    }
-}
+const AppNavigator = createStackNavigator({
+  Homepage: {
+    screen: Homepage,
+  },
+  Messages: {
+    screen: Messages,
+  },
+  Login: {
+    screen: Login,
+  },
+  Menu: {
+    screen: Menu,
+  }
+}, {
+    headerMode: 'none',
+    initialRouteName: 'Login',
+});
+
+export default createAppContainer(AppNavigator);
