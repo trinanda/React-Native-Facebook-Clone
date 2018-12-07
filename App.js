@@ -1,6 +1,4 @@
-import React from 'react';
-import { View, Text, Button } from 'react-native';
-import { createAppContainer, createStackNavigator, StackActions, NavigationActions } from 'react-navigation'; // Version can be specified in package.json
+import { createAppContainer, createStackNavigator } from 'react-navigation'; // Version can be specified in package.json
 
 import Homepage from './src/screens/Homepage.js'
 import Menu from './src/screens/Menu.js'
