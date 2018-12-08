@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Container, Header, Content, List, ListItem, Text, Icon, Left, Body, Right, Switch, Thumbnail, Button } from 'native-base';
-import { View } from 'react-native'
+import { Container, Header, Content, List, ListItem, Text, Icon, Item,
+  Left, Body, Right, Switch, Thumbnail, Button } from 'native-base';
 
 import HeaderMod from '../components/HeaderMod.js'
 import HeaderSearch from '../components/HeaderSearch.js'
@@ -11,19 +11,20 @@ export default class Menu extends Component {
     return (
       <Container>
         <HeaderSearch navigationsData = {this.props.navigation} />
-
         <HeaderMod navigationsData = {this.props.navigation} />
 
         <Content>
 
           <ListItem icon>
-            <Left>
-              <Thumbnail source={require('../images/Ali.jpeg')} style={{borderRadius: 25, borderWidth: 2, height: 40, width: 40}}/>
-            </Left>
-            <Body>
-              <Text>Ali</Text>
-                <Text style={{color: '#dadada', fontSize: 13, fontFamily: 'sans-serif'}}>Lihat profile Anda</Text>
-            </Body>
+              <Left>
+                <Item onPress = {() => this.props.navigationsData.navigate('Homepage')}>
+                  <Thumbnail source={require('../images/Ali.jpeg')} style={{borderRadius: 25, borderWidth: 2, height: 40, width: 40}}/>
+                </Item>
+              </Left>
+              <Body>
+                <Text>Ali</Text>
+                  <Text style={{color: '#dadada', fontSize: 13, fontFamily: 'sans-serif'}}>Lihat profile Anda</Text>
+              </Body>
           </ListItem>
 
           <List style={{height: 19, backgroundColor: "#dadada", fontFamily: 'sans-serif'}}>

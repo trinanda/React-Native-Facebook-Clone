@@ -19,38 +19,38 @@ export default class Messages extends Component {
           <List>
             <ListItem avatar>
               <Left>
-                <Thumbnail source={require('../images/pp1.jpeg')} />
+                <Thumbnail source={require('../images/Kaka.jpeg')} />
               </Left>
               <Body>
-                <Text>Kumar Pratik</Text>
+                <Text>Kaka</Text>
                 <Text note>Doing what you like will always keep you happy . .</Text>
               </Body>
               <Right>
-                <Text note>3:43 pm</Text>
+                <Text note>5:43 pm</Text>
               </Right>
             </ListItem>
           </List>
           <List>
             <ListItem avatar>
               <Left>
-                <Thumbnail source={require('../images/pp2.jpg')} />
+                <Thumbnail source={require('../images/Cristiano.jpg')} />
               </Left>
               <Body>
-                <Text>Kumar Pratik</Text>
+                <Text>Cristiano</Text>
                 <Text note>Doing what you like will always keep you happy . .</Text>
               </Body>
               <Right>
-                <Text note>3:43 pm</Text>
+                <Text note>11:22 pm</Text>
               </Right>
             </ListItem>
           </List>
           <List>
             <ListItem avatar>
               <Left>
-                <Thumbnail source={require('../images/pp3.jpeg')} />
+                <Thumbnail source={require('../images/Zidane.jpg')} />
               </Left>
               <Body>
-                <Text>Kumar Pratik</Text>
+                <Text>Zidane</Text>
                 <Text note>Doing what you like will always keep you happy . .</Text>
               </Body>
               <Right>
