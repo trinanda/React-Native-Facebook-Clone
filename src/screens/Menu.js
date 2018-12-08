@@ -17,7 +17,7 @@ export default class Menu extends Component {
 
           <ListItem icon>
               <Left>
-                <Item onPress = {() => this.props.navigationsData.navigate('Homepage')}>
+                <Item onPress = {() => this.props.navigation.navigate('UserProfile')}>
                   <Thumbnail source={require('../images/Ali.jpeg')} style={{borderRadius: 25, borderWidth: 2, height: 40, width: 40}}/>
                 </Item>
               </Left>
