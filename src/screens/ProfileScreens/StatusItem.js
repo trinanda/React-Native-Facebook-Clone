@@ -1,21 +1,20 @@
-import React, { Component } from 'react'
-import { Container } from 'native-base'
+import React, { Component } from 'react';
+import { View } from 'react-native';
 
-import StatusHeader from './StatusHeader.js'
-import StatusContent from './StatusContent.js'
-import StatusTotalReact from './StatusTotalReact.js'
-import StatusReactButton from './StatusReactButton.js'
+import StatusHeader from './StatusHeader';
+import StatusContent from './StatusContent';
+import StatusTotalReact from './StatusTotalReact';
+import StatusReactButton from './StatusReactButton';
 
-
-export default class StatusItem extends Component{
-    render(){
-        return(
-            <Container style={{ backgroundColor: 'white', marginTop: 10 }}>
-                <StatusHeader date={ this.props.date} />
-                <StatusContent text={ this.props.text } />
-                <StatusTotalReact total={ this.props.total } />
-                <StatusReactButton />
-            </Container>
-        )
-    }
+export default class StatusItem extends Component {
+	render(){
+		return(
+			<View style={{ backgroundColor: 'white', marginTop: 10 }}>
+				<StatusHeader date={this.props.date} />
+				<StatusContent text={this.props.text} image={this.props.image} />
+				<StatusTotalReact total={this.props.total} />
+				<StatusReactButton />				
+			</View>
+		);
+	}
 }

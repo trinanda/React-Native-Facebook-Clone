@@ -4,7 +4,8 @@ import Homepage from './src/screens/Homepage.js'
 import Menu from './src/screens/Menu.js'
 import Login from './src/screens/Login.js'
 import Messages from './src/screens/Messages.js'
-import ProfilePage from './src/screens/ProfileScreens/ProfilePage.js'
+import ProfilePage from './src/screens/ProfilePage.js'
+import UserProfile from './src/screens/UserProfile.js'
 
 const AppNavigator = createStackNavigator({
   Homepage: {
@@ -22,9 +23,12 @@ const AppNavigator = createStackNavigator({
   ProfilePage: {
     screen: ProfilePage,
   },
+  UserProfile: {
+    screen: UserProfile,
+  },
 }, {
     headerMode: 'none',
-    initialRouteName: 'Login',
+    initialRouteName: 'UserProfile',
 });
 
 export default createAppContainer(AppNavigator);

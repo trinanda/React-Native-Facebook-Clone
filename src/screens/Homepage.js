@@ -40,19 +40,31 @@ export default class Homepage extends Component {
             <CardItem>
               <Left>
                 <Button transparent>
-                  <Icon active name="thumbs-up" />
+                  <Icon 
+                    style={{ fontSize: 23, color: '#4E5665'}}
+                    name="thumbs-up" 
+                    type='FontAwesome'
+                  />
                   <Text style = {{fontSize: 11}}>33 Likes</Text>
                 </Button>
               </Left>
               <Body>
                 <Button transparent>
-                  <Icon active name="chatbubbles" />
+                  <Icon
+                    style={{ fontSize: 23, color: '#4E5665'}} 
+                    name="comment" 
+                    type='Octicons'
+                  />
                   <Text style = {{fontSize: 11}}>Comments</Text>
                 </Button>
               </Body>
               <Right>
                 <Button transparent>
-                  <Icon active name="share" />
+                  <Icon
+                    style={{ fontSize: 23, color: '#4E5665'}} 
+                    name="share" 
+                    type='MaterialCommunityIcons'
+                  />
                   <Text style = {{fontSize: 11}}>Share</Text>
                 </Button>
               </Right>
@@ -77,19 +89,31 @@ export default class Homepage extends Component {
             <CardItem>
               <Left>
                 <Button transparent>
-                  <Icon active name="thumbs-up" />
+                  <Icon 
+                    style={{ fontSize: 23, color: '#3568E5'}}
+                    name="thumbs-up" 
+                    type='FontAwesome'
+                  />
                   <Text style = {{fontSize: 11}}>4 Likes</Text>
                 </Button>
               </Left>
               <Body>
                 <Button transparent>
-                  <Icon active name="chatbubbles" />
+                  <Icon
+                    style={{ fontSize: 23, color: '#4E5665'}} 
+                    name="comment" 
+                    type='Octicons'
+                  />
                   <Text style = {{fontSize: 11}}>Comments</Text>
                 </Button>
               </Body>
               <Right>
                 <Button transparent>
-                  <Icon active name="share" />
+                  <Icon
+                    style={{ fontSize: 23, color: '#4E5665'}} 
+                    name="share" 
+                    type='MaterialCommunityIcons'
+                  />
                   <Text style = {{fontSize: 11}}>Share</Text>
                 </Button>
               </Right>
@@ -125,19 +149,31 @@ export default class Homepage extends Component {
             <CardItem>
               <Left>
                 <Button transparent>
-                  <Icon active name="thumbs-up" />
+                  <Icon 
+                    style={{ fontSize: 23, color: '#4E5665'}}
+                    name="thumbs-up" 
+                    type='FontAwesome'
+                  />
                   <Text style = {{fontSize: 11}}>99 Likes</Text>
                 </Button>
               </Left>
               <Body>
                 <Button transparent>
-                  <Icon active name="chatbubbles" />
+                  <Icon
+                    style={{ fontSize: 23, color: '#4E5665'}} 
+                    name="comment" 
+                    type='Octicons'
+                  />
                   <Text style = {{fontSize: 11}}>Comments</Text>
                 </Button>
               </Body>
               <Right>
                 <Button transparent>
-                  <Icon active name="share" />
+                  <Icon
+                    style={{ fontSize: 23, color: '#4E5665'}} 
+                    name="share" 
+                    type='MaterialCommunityIcons'
+                  />
                   <Text style = {{fontSize: 11}}>Share</Text>
                 </Button>
               </Right>
